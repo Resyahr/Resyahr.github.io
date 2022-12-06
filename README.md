@@ -1,1 +1,0 @@
-# Resyahr.github.io
