@@ -338,6 +338,11 @@ body {
 
 .project_2 {
     background-image: url(./assets/projects/project2.png);
+    margin-bottom: 3em;
+}
+
+.project_3 {
+    background-image: url(./assets/projects/project3.png);
 }
 
 .filter {
