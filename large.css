@@ -1,0 +1,102 @@
+:root {
+    /* Colors */
+    --primary_clr: #0A192F;
+    --title_clr: #CCD6F6;
+    --text_clr: #828DAA;
+    --link_clr: #64FFDA;
+    --link_clr_light: #122E3F;
+    --navy_shadow: #020c1bb3;
+
+    /* Fonts */
+    --fs_title_lg: 2.3em;
+    --fs_sub_title_lg: 2.1em;
+    --fs_header_lg: 1.8em;
+    --fs_paragraph_lg: 1.6em;
+    --fs_list_lg: 1.4em;
+
+    --fw-bold: 900;
+    --fw-medium: 600;
+    --fw-thin: 300;
+}
+
+@media screen and (min-width: 680px) {
+    /* Global */
+    .list {
+        padding: 0 3em;
+    }
+
+    /* Nav */
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav_link_container {
+        display: block;
+        position: static;
+        height: auto;
+        width: auto;
+        box-shadow: none;
+        background-color: var(--primary_clr);
+        
+    }
+
+    .nav_links {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav_links li {
+        margin: 0 1em;
+        padding: 1em;
+    }
+
+    /* Header */
+    .hero_container {
+        margin: 8em 10em;
+    }
+
+    .description_container p {
+        width: 500px;
+    }
+
+    .contact_me {
+        align-self: flex-start;
+    }
+
+    .button {
+        display: block;
+        margin: 0;
+        width: 400px;
+        border: 1px solid var(--link_clr);
+    }
+
+    /* Skills */
+    .content_container {
+        margin: 8em 8em;
+    }
+
+    .ul_container {
+        justify-content: flex-start;
+    }
+
+    .built_container {
+        max-width: 70%;
+        min-width: 100%;
+    }
+    
+    .project {
+        height: 500px;
+        
+    }
+
+    .project_description {
+        max-width: 60%;
+        margin: 0 auto;
+        
+    }
+}
