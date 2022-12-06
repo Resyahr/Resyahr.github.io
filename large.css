@@ -57,7 +57,7 @@
 
     /* Header */
     .hero_container {
-        margin: 8em 10em;
+        margin: 5em 5em;
     }
 
     .description_container p {
@@ -75,6 +75,11 @@
         border: 1px solid var(--link_clr);
     }
 
+    .profile_picture_container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
     /* Skills */
     .content_container {
         margin: 8em 8em;
@@ -84,13 +89,24 @@
         justify-content: flex-start;
     }
 
-    .built_container {
+/*     .built_container {
         max-width: 70%;
         min-width: 100%;
-    }
-    
+        display: flex;
+        
+        flex-basis: 0;
+        justify-content: center;
+    } */
+
     .project {
         height: 500px;
+        max-width: 556px;
+        margin: 0 auto;
+        flex-grow: 1;
+    }
+
+    .project_1 {
+        margin-bottom: 3em;
         
     }
 

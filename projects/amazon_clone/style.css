@@ -12,6 +12,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Global */
+
 .link {
     text-decoration: none;
     color: #017185;
@@ -20,6 +22,7 @@ body {
     color: #080808;
     font-weight: bold;
     display: inline-block;
+    padding: 1em;
 }
 
 .logo {
@@ -36,10 +39,16 @@ body {
 }
 .nav_link {
     color: var(--title_color);
-    font-weight: 500;
-    font-size: 1.5em;
+    font-weight: 700;
     padding: .2em .5em;
+    font-size: 1.7em;
 }
+
+.center {
+    text-align: center;
+}
+
+/* Site */
 
 .container {
     margin: 0 2em;
@@ -80,20 +89,23 @@ body {
 }
 
 .recomended_images {
-    width: 100%;
-}
-.shopping_description p, a{
-    margin: 1em 0 0 2em;
+    display: flex;
+    justify-content: space-between;
 }
 
-.recommended img{
+.recomended_image {
     text-align: center;
     border-radius: 8%;
     margin: 1em 1em;
     box-shadow: 6px 6px 10px #d3d3d3;
+    max-width: 400px;
+    min-width: 50px;
 }
 
-.gifting_game img{
-    width: 70%;
-    height: auto;
+.gift_img {
+    width: 100%;
+}
+
+.sound_of_sheer_img {
+    width: 100%;
 }

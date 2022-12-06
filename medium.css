@@ -19,7 +19,7 @@
 
     /* Navbar */
     .nav_link_container {
-        width: 320px;
+        width: 380px;
     }
     
     /* Header */
@@ -50,16 +50,26 @@
 
     /* About Me */
 
-        .ul_container {
-            justify-content: space-around;
-        }
-        .list {
-            padding: 0;
-        }
+    .ul_container {
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
 
-        .profile_picture {
-            max-width: 300px;
-        }
+    .list {
+        padding: 0;
+    }
+
+    .profile_picture_container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .profile_picture {
+        max-width: 300px;
+    }
+
+
+
 
     /* Skills */
     .built_container {

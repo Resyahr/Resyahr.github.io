@@ -183,6 +183,7 @@ body {
     height: 100vh;
 }
 .nav_links {
+    display: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,7 +208,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 7em 2em 0 2em;
+    margin: 4em 2em 0 2em;
     height: calc(100vh - 60px);
 }
 .salute {
@@ -242,7 +243,7 @@ body {
     background-color: var(--primary_clr);
     border: 2px solid var(--link_clr);
     border-radius: 8px;
-    margin: 5em 0;
+    margin: 1em 0;
     cursor: pointer;
     color: var(--link_clr);
     font-weight: var(--fw-thick);
@@ -256,6 +257,10 @@ body {
     transition: ease .5s;
 }
 
+.social_icon_container {
+    width: 100px;
+}
+
 .follow {
     text-align: center;
     padding-bottom: 1em;
@@ -265,7 +270,6 @@ body {
 .social_icon {
     text-align: center;
     padding: 1em;
-    margin-bottom: 5em;
 }
 .social_icon a {
     padding: .5em;
@@ -277,20 +281,20 @@ body {
 
 /* WEB CONTENT */
 .presentation {
-    background-image: url(./assets/decor3.svg);
-    background-position: center;
-    background-size: cover;
+    margin-top: 5em;
 }
-
 .about_me__paragraph {
     font-size: var(--fs_paragraph);
-    text-align: justify;
+    
 }
 
 .profile_picture_container {
     text-align: center;
     margin: 2em 0;
     border: 0 3px 3px 0 solid var(--link_clr);
+    background-image: url(./assets/decor1.svg);
+    background-position: center;
+    background-size: cover;
 }
 .profile_picture{
     max-width: 80%;
@@ -351,6 +355,7 @@ body {
     z-index: 2;
     font-size: var(--fs_list);
     padding: 2em;
+    
 }
 
 .project_description {
@@ -359,6 +364,9 @@ body {
     border-radius: 8px;
     margin-top: 8em;
     padding: 2em;
+    background-image: url(./assets/decor.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .open_project {
