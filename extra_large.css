@@ -1,0 +1,60 @@
+:root {
+    /* Colors */
+    --primary_clr: #0A192F;
+    --title_clr: #CCD6F6;
+    --text_clr: #828DAA;
+    --link_clr: #64FFDA;
+    --link_clr_light: #122E3F;
+    --navy_shadow: #020c1bb3;
+
+    /* Fonts */
+    --fs_title_lg: 4em;
+    --fs_sub_title_lg: 3.7em;
+    --fs_header_lg: 2.4em;
+    --fs_paragraph_lg: 2em;
+    --fs_list_lg: 1.8em;
+
+    --fw-bold: 900;
+    --fw-medium: 600;
+    --fw-thin: 300;
+}
+
+@media screen and (min-width: 1050px) {
+
+    .hero_container {
+        margin: 5em 20em;
+    }
+
+ /*    .follow {
+        padding-right: 1em;
+        letter-spacing: .3em;
+        position: relative;
+
+    }
+    .follow::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        margin-left: 1em;
+        rotate: 90deg;
+        height: 1em;
+        width: 1px;
+        background-color: var(--text_clr);
+    }
+
+    .social_icon {
+        margin-top: 1em;
+    } */
+
+    .content_container {
+        margin: 0 20em;
+    }
+    
+    .profile_picture_container {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+
+}
+

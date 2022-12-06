@@ -1,0 +1,96 @@
+:root {
+    /* Fonts */
+    --fs_title_md: 2em;
+    --fs_sub_title_md: 1.8em;
+    --fs_header_md: 1.5em;
+    --fs_paragraph_md: 1.3em;
+    --fs_list_md: 1.1em;
+
+    --fw-bold: 900;
+    --fw-medium: 600;
+    --fw-thin: 300;
+}
+
+@media screen and (min-width: 480px) {
+    /* Global */
+    .paragraph {
+        font-size: var(--fs_paragraph_md);
+    }
+
+    /* Navbar */
+    .nav_link_container {
+        width: 380px;
+    }
+    
+    /* Header */
+    .content_container {
+        margin: 0 2.5em;
+    }
+
+    .salute {
+        font-size: var(--fs_header_md);
+    }
+    
+    .name {
+        font-size: var(--fs_title_md);
+    }
+
+    .description {
+        font-weight: var(--fw-thin_md);
+        font-size: var(--fs_sub_title_md);
+    }
+
+    .button {
+        font-size: var(--fs_paragraph_md);
+    }
+
+    .follow {
+        font-size: var(--fs_list_md);
+    }
+
+    /* About Me */
+
+    .ul_container {
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .list {
+        padding: 0;
+    }
+
+    .profile_picture_container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .profile_picture {
+        max-width: 300px;
+    }
+
+
+
+
+    /* Skills */
+    .built_container {
+        min-width: 60%;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .aside {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        z-index: -2;
+        opacity: .3;
+    }
+
+    .aside img {
+        width: 300px;
+        height: 300px;
+    }
+}
+

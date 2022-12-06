@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --title_color: #EAEDED;
+}
+
+body {
+    background-color: #EAEDED;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Global */
+
+.link {
+    text-decoration: none;
+    color: #017185;
+}
+.pa {
+    color: #080808;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1em;
+}
+
+.logo {
+    background-color: #222F3E;
+    padding: 1.5em;
+}
+.logo img {
+    width: 200px;
+}
+
+.nav_links {
+    background-color: #354758;
+    padding: 1.2em;
+}
+.nav_link {
+    color: var(--title_color);
+    font-weight: 700;
+    padding: .2em .5em;
+    font-size: 1.7em;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Site */
+
+.container {
+    margin: 0 2em;
+}
+
+.gift_cards {
+    background-color: #F56600;
+    margin: 2em 0;
+    padding: .7em;
+    text-align: center;
+    font-weight: 300;
+    color: var(--title_color);
+}
+
+.background_holidays_gift {
+    background: url(./assets-1/assets/bg-image.png);
+    height: 12.2em;
+    color: var(--title_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background_holidays_gift h1 {
+    padding: 1em;
+}
+.background_holidays_gift p {
+    font-weight: 600;
+}
+
+.recommended {
+    background-color: #FFFFFF;
+    margin: 2em 0;
+}
+.subtitle {
+    text-align: left;
+    margin: .5em 0;
+}
+
+.recomended_images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recomended_image {
+    text-align: center;
+    border-radius: 8%;
+    margin: 1em 1em;
+    box-shadow: 6px 6px 10px #d3d3d3;
+    max-width: 400px;
+    min-width: 50px;
+}
+
+.gift_img {
+    width: 100%;
+}
+
+.sound_of_sheer_img {
+    width: 100%;
+}
