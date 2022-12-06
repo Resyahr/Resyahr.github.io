@@ -312,12 +312,6 @@ body {
 }
 
 /* Skills */
-.built_container {
-    background-image: url('./assets/decor4.svg');
-    background-position: center;
-    background-size: cover;
-}
-
 .project {
     display: flex;
     flex-wrap: wrap;
