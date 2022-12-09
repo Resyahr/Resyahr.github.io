@@ -336,7 +336,7 @@ body {
 
 .ul_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     font-size: var(--fs_sub_title);
