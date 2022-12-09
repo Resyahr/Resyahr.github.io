@@ -17,6 +17,24 @@
         font-size: var(--fs_paragraph_md);
     }
 
+  /*   .site_container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .svg_graphic {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+        top: 5%;
+        right: 20%;
+    }
+
+    .svg_graphic img {
+        width: 180%;
+    } */
+
     /* Navbar */
     .nav_link_container {
         width: 380px;
@@ -25,6 +43,10 @@
     /* Header */
     .content_container {
         margin: 0 2.5em;
+    }
+
+    .description_paragraph {
+        margin-right: 12em;
     }
 
     .salute {
@@ -40,8 +62,8 @@
         font-size: var(--fs_sub_title_md);
     }
 
-    .button {
-        font-size: var(--fs_paragraph_md);
+    .contact_me {
+        text-align: left;
     }
 
     .follow {
@@ -61,7 +83,6 @@
 
     .profile_picture_container {
         max-width: 90%;
-        margin: 0 auto;
     }
 
     .profile_picture {

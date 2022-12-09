@@ -25,6 +25,16 @@
         padding: 0 3em;
     }
 
+ /*    .svg_graphic {
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 60%;
+        z-index: -1;
+        opacity: 1;
+        width: 15%;
+    } */
+
     /* Nav */
 
     .hamburger {
