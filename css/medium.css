@@ -23,35 +23,35 @@
 
 @media screen and (min-width: 480px) {
     /* Global */
+    .section {
+        margin: 4em;
+    }
     .paragraph {
         font-size: var(--fs_paragraph_md);
     }
 
-  /*   .site_container {
-        position: relative;
-        overflow: hidden;
-    }
-
-    .svg_graphic {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        z-index: -1;
-        top: 5%;
-        right: 20%;
-    }
-
-    .svg_graphic img {
-        width: 180%;
-    } */
-
     /* Navbar */
+    .navbar {
+        height: 90px;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
     .nav_link_container {
         width: 380px;
-        background-color: var();
+    }
+
+    .nav_links {
+        font-size: var(--fs_list_md);
     }
     
     /* Header */
+    .hero_container {
+        margin: 0 4em;
+    }
+
     .description_paragraph {
         margin-right: 12em;
     }
@@ -78,32 +78,26 @@
     }
 
     /* About Me */
-
     .ul_container {
-        justify-content: space-around;
-        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .ul_container div{
+        flex-basis: 30%;
     }
 
     .list {
         padding: 0;
     }
 
-    .profile_picture_container {
-        max-width: 90%;
-    }
-
     .profile_picture {
         max-width: 300px;
+        max-width: 50%;
     }
-
-
-
 
     /* Skills */
-    .built_container {
-
-    }
-
     .aside {
         width: 300px;
         height: 300px;

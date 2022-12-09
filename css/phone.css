@@ -83,8 +83,6 @@ body {
 }
 
 .section {
-    justify-content: space-between;
-    align-items: center;
     margin: 2em;
 }
 
@@ -171,7 +169,7 @@ body {
     display: none;
     width: 25px;
     height: 2px ;
-    background-color: var(--secondary_clr);
+    background-color: var(--link_clr);
     border-radius: 2px;
     transform: rotate(50deg);
     position: relative;
@@ -181,7 +179,7 @@ body {
     position: absolute;
     width: 25px;
     height: 2px ;
-    background-color: var(--secondary_clr);
+    background-color: var(--link_clr);
     border-radius: 2px;
     transform: rotate(80deg);
 }
@@ -226,31 +224,31 @@ body {
 }
 
 .hero_container {
+    
+    margin: 0em 2em 0 2em;
+    height: 100vh;
+}
+
+.description_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0em 2em 0 2em;
-    height: calc(100vh - 60px);
+    height: 100%;
 }
 
 .salute {
     color: var(--link_clr);
     font-size: var(--fs_header);
+    margin-top: 6em;
 }
 .name {
     display: block;
     color: var(--title_clr);
     font-size: var(--fs_title);
     font-weight: var(--fw-bold);
-    margin-top: .5em;
 }
 .description {
-    margin-top: .2em;
     font-size: var(--fs_sub_title);
-}
-.description_container p{
-    margin-top: 2em;
-    font-size: var(--fs_paragraph);
 }
 
 .profile_picture_container {
@@ -309,8 +307,7 @@ body {
 
 @keyframes cta {
     from {
-        transform: translateY(20%);
-        
+        transform: translateY(25%);
     }
 
     to {
@@ -342,15 +339,15 @@ body {
     font-size: var(--fs_sub_title);
     color: var(--text_clr);
     text-align: center;
+
 }
-.ul_container span {
+
+.ul_container div{
     padding: 1em;
 }
-.ul_container span {
-    flex-basis: 50%;
+.ul_container div{
+    flex-basis: 20%;
 }
-
-
 
 /* Skills */
 .built_container {
@@ -452,15 +449,7 @@ body {
     background-position: center;
 }
 
-.ul_container {
-    font-size: 1em;
-}
-
-.ul_container_hobbies span:nth-child(1), span:nth-child(2) {
-    flex-basis: 50%;
-
-}
-.ul_container_hobbies span:nth-child(3), span:nth-child(4) {
+.ul_container:nth-child(3n) div {
     flex-basis: 50%;
 }
 
