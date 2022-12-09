@@ -172,7 +172,7 @@ body {
     display: none;
     width: 25px;
     height: 2px ;
-    background-color: var(--link_clr);
+    background-color: var(--secondary_clr);
     border-radius: 2px;
     transform: rotate(50deg);
     position: relative;
@@ -182,7 +182,7 @@ body {
     position: absolute;
     width: 25px;
     height: 2px ;
-    background-color: var(--link_clr);
+    background-color: var(--secondary_clr);
     border-radius: 2px;
     transform: rotate(80deg);
 }
@@ -197,7 +197,6 @@ body {
     width: 80%;
     height: 100vh;
     transition: display 1s ease-out;
-    
 }
 
 .nav_links {
