@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1558.282" height="541.414" viewBox="0 0 1558.282 541.414">
   <g id="Group_1" data-name="Group 1" transform="translate(-715.678 -435)">
-    <path id="Path_1" data-name="Path 1" d="M763.789,0c767.805,0,468.851,270.707,661.387,270.707s85.358,270.707-661.387,270.707S441.331,270.707,102.4,270.707-4.016,0,763.789,0Z" transform="translate(765 435)" fill="#cb2376"/>
+    <path id="Path_1" data-name="Path 1" d="M763.789,0c767.805,0,468.851,270.707,661.387,270.707s85.358,270.707-661.387,270.707S441.331,270.707,102.4,270.707-4.016,0,763.789,0Z" transform="translate(765 435)" fill="#FF7124"/>
     <text id="RM" transform="translate(1319.061 798.115)" fill="#fffbfb" font-size="276" font-family="SegoeUI, Segoe UI" letter-spacing="0.078em"><tspan x="0" y="0">RM</tspan></text>
   </g>
 </svg>

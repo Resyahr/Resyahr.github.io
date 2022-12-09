@@ -9,6 +9,7 @@ const close_menu = document.querySelector('.close_line');
 const menu = document.querySelector('.nav_link_container');
 const site = document.querySelector('.site_container');
 const profile_pic = document.querySelector('.profile_picture_container').getBoundingClientRect();
+const cta = document.querySelector(".cta");
 
 let current_position = window.pageYOffset;
 
@@ -19,9 +20,11 @@ window.onscroll = function () {
 
     if (current_position > new_position) {
         navbar.style.top = '0';
+        cta.style.opacity = '1'
     }
     else {
         navbar.style.top = '-30%';
+        cta.style.opacity = '0'
     }
     current_position = new_position;
 
