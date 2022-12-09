@@ -91,21 +91,13 @@
     }
 
     /* Skills */
-    .content_container {
-        margin: 8em 8em;
-    }
 
     .ul_container {
         justify-content: flex-start;
     }
 
 /*     .built_container {
-        max-width: 70%;
-        min-width: 100%;
-        display: flex;
-        
-        flex-basis: 0;
-        justify-content: center;
+
     } */
 
     .project {

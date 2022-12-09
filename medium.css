@@ -41,10 +41,6 @@
     }
     
     /* Header */
-    .content_container {
-        margin: 0 2.5em;
-    }
-
     .description_paragraph {
         margin-right: 12em;
     }
@@ -94,9 +90,7 @@
 
     /* Skills */
     .built_container {
-        min-width: 60%;
-        max-width: 70%;
-        margin: 0 auto;
+
     }
 
     .aside {

@@ -54,13 +54,13 @@ body {
     padding: 1em;
 }
 
-.section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2em;
-}
 
+.title_border {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3em;
+}
 
 
 .section_title {
@@ -83,10 +83,12 @@ body {
     align-self: self-end;
 }
 
-.section_margin_top {
-    margin: 0 2em;
-    padding: 5em 0 2em 0;
+.section {
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
 }
+
 
 .margin_botton {
     margin-top: 1em;
@@ -100,12 +102,14 @@ body {
 /* Decor Headear*/
 
 .svg_graphic {
-    height: 10vh;
-    right: 90%;
+    background-image: url(./assets/sections/svg_graphic_1.svg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    background-color: #2054a3;
+    height: 100vh;
     position: absolute;
     z-index: -3;
+    
 }
 /* NAVBAR */
 .navbar {
@@ -122,8 +126,13 @@ body {
 }
 
 .logo {
-    padding: 1em 3em;
+    margin: 0 3em;
 }
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -139,7 +148,7 @@ body {
 .ham_line {
     width: 22px;
     height: 2px;
-    background-color: var(--link_clr);
+    background-color: var(--secondary_clr);
 }
 .ham_line::before {
     content: "";
@@ -148,7 +157,7 @@ body {
     right: 0;
     width: 18px;
     height: 2px;
-    background-color: var(--link_clr);
+    background-color: var(--secondary_clr);
 }
 .ham_line::after {
     content: "";
@@ -157,7 +166,7 @@ body {
     right: 0;
     width: 18px;
     height: 2px;
-    background-color: var(--link_clr);
+    background-color: var(--secondary_clr);
 }
 .close_line {
     display: none;
@@ -221,9 +230,9 @@ body {
 .hero_container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin: 8em 2em 0 2em;
-    height: calc(100vh - 60px);
+    justify-content: center;
+    margin: 0em 2em 0 2em;
+    height: calc(100vh - 110px);
 }
 
 .salute {
@@ -252,7 +261,7 @@ body {
     margin-top: 2em;
 }
 .profile_picture{
-    max-width: 70%;
+    max-width: 60%;
     border-radius: 40% 80% 50% 30%;
     transition: all 1s;
 }
@@ -272,8 +281,8 @@ body {
 
 }
 .social_icon i {
-    color: var(--title_clr);
-    border: 1px solid var(--title_clr);
+    color: var(--secondary_clr);
+    border: 1px solid var(--secondary_clr);
     border-radius: 100%;
     padding: .3em;
 }
@@ -285,41 +294,18 @@ body {
     text-align: center;
     
 }
-.cta::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 30px solid var(--tempting-color);
-    border-radius: 100% 20% 20%;
-    transform: rotate(45deg);
-
-}
 
 /* WEB CONTENT */
 .content_container {
     position: relative;
-    overflow: hidden;
-}
-
-.about_svg {
-    position: absolute;
-    z-index: -4;
-    right: -2px;
-}
-.projects_svg {
-    position: absolute;
-    z-index: -4;
-    right: -2px;
-    top: 32%;
 }
 
 .presentation {
-    margin: 5em 2em;
+    background-image: url(./assets/sections/svg_graphic_2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 
 .about_me__paragraph {
     font-size: var(--fs_paragraph);
@@ -330,13 +316,17 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin: 2em 2em;
-    font-size: var(--fs_list);
+
+    font-size: var(--fs_sub_title);
+    color: var(--link_clr);
 }
 
 /* Skills */
 .built_container {
-    margin: 0 2em;
+    background-image: url(./assets/sections/svg_graphic_3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .section_margin_top h2 {
@@ -357,6 +347,7 @@ body {
     border-bottom: 1px solid var(--link_clr);
     box-shadow: 12px 12px 20px var(--navy_shadow);
     margin-bottom: 3em;
+    margin-top: 2em;
 }
 
 .project_1 {
@@ -424,6 +415,11 @@ body {
 }
 
 /* Hobbies */
+.hobbies_container {
+    background-image: url(./assets/sections/svg_graphic_4.svg);
+    background-size: cover;
+    background-position: center;
+}
 
 /* Footer */
 .footer {
