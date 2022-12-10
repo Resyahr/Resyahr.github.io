@@ -12,29 +12,42 @@ const profile_pic = document.querySelector('.profile_picture_container').getBoun
 const cta = document.querySelector(".cta");
 
 let current_position = window.pageYOffset;
-
-
-
 window.onscroll = function () {
-    let new_position = window.pageYOffset
+    let new_position = window.pageYOffset;
 
     if (current_position > new_position) {
         navbar.style.top = '0';
-        cta.style.opacity = '1'
     }
     else {
         navbar.style.top = '-30%';
-        cta.style.opacity = '0'
     }
     current_position = new_position;
 
-    if (current_position > 1) {
+    if (current_position > 100) {
         navbar.style.boxShadow = '1px 1px 20px var(--navy_shadow)';
     } else {
         navbar.style.boxShadow = 'none';
     };
 
-}
+    console.log(current_position)
+    console.log(new_position)
+
+    if (current_position < 360) {
+        cta.style.opacity = '1'
+    }
+    else {
+        cta.style.opacity = '0'
+    }
+
+    if (current_position < 100) {
+        navbar.style.backgroundColor = '#2054A3';
+    }
+    else {
+        navbar.style.backgroundColor = '#112240';
+    }
+
+
+};
 
 function toggle_menu () {
 
