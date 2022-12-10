@@ -361,129 +361,54 @@ body {
     margin: 2em auto;
     color: white;
     position: relative;
-    border-radius: 40% 80% 50% 30%;
-    transition: all .5s ease;
-}
-
-.card__filter {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #161616;
-    z-index: 1;
-    opacity: .9;
-    border-radius: 40% 80% 50% 30%;
-    transition: all .5s ease;
-}
-.card__filter:hover:hover
-{
     border-radius: 10%;
-    background-color: none;
-    
-}
-.card__filter:hover {
-    opacity: 0;
+    transition: all .5s ease;
+    overflow: hidden;
 }
 
 .card_info {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 300px;
-    height: 50px;
-    text-align: center;
-    color: white;
-    z-index: 3;
-    margin: 2em 0;
-}
-
-
-/* .project {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    border-radius: 12px;
-    border-right: 1px solid var(--link_clr);
-    border-bottom: 1px solid var(--link_clr);
-    box-shadow: 12px 12px 20px var(--navy_shadow);
-    margin-bottom: 3em;
-    margin-top: 2em;
-}
-
-.project_1 {
-    background-image: url("../assets/projects/project1.png");
-}
-
-.project_2 {
-    background-image: url(../assets/projects/project2.png);
-    margin-bottom: 3em;
-}
-
-.project_3 {
-    background-image: url(../assets/projects/project3.png);
-}
-
-.filter:hover {
-    opacity: .3;
-}
-
-.filter {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+    background: rgb(18,46,63);
+    background: linear-gradient(0deg, rgba(18,46,63,1) 0%, rgba(255,255,255,0) 100%);
+    transition: all 1s ease;
+}
+.card_info:hover {
+    opacity: 0;
+}
+.card_info:hover .card_info_text {
+    opacity: 0;
+    transform: translateX(100%);
+}
+.card_info:hover .open_project {
+    opacity: 1;
+    background-color: red;
+}
+
+
+.card_info_text {
     position: absolute;
-    box-shadow: 12px 12px 20px var(--navy_shadow);
-    border-radius: 12px;
-    z-index: 1;
-    transition: opacity .5s ease;
-}
-
-.project_description_container {
-    position: relative;
-    z-index: 2;
-    font-size: var(--fs_list);
+    bottom: 0;
+    width: 100%;
     padding: 2em;
-    
-}
-
-.project_description {
-    position: relative;
-    background-color: #112240;
-    border-radius: 8px;
-    margin-top: 8em;
-    padding: 2em;
-    background-image: url(../assets/decor.svg);
-    background-position: center;
-    background-size: cover;
+    user-select: none;
+    text-align: center;
+    transition: all .5s ease;
+    text-overflow: ellipsis;
 }
 
 .open_project {
     position: absolute;
-    height: 30px;
-    right: 0;
-    top: 0;
-}
-
-.project_title {
-    color: white;
-    font-weight: 900;
-    font-size: var(--fs_header);
-} */
-.white {
-    color: white;
-}
-
-.subtitle {
-    padding: 1em;
-    color: var(--primary_clr);
-    font-size: 1.2rem;
+    width: 100%;
+    height: 100px;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s ease;
 }
 
 /* Interests */
