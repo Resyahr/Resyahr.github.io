@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #161616;
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin: 16em auto;
+}
+
+.card__filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #161616;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 12px;
+    transition: all .5s ease;
+}
+.card:hover .card__filter{
+    opacity: .4;
+}
+
+.card__image{
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+.card__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.card__info {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 40%;
+    padding: .2em;
+    border-radius: 60px;
+    color: white;
+    z-index: 3;
+    user-select: none;
+    cursor: pointer;
+    transform: translateY(-400%);
+    transition: all .5s ease;
+}
+.card__info p {
+    display: inline-block;
+}
+.card:hover .card__info {
+    transform: translateY(0);
+}
+
+button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: white;
+    user-select: none;
+    background-color: #CC0000;
+    padding: .8em;
+    border-radius: 60px;
+    z-index: 3;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-300%);
+    transition: all .5s ease;
+}
+.card:hover button {
+    transform: translateY(0);
+}
+
+.bottom_btns {
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    transform: translateY(150%);
+    height: 10%;
+    transition: all .5s ease;
+    z-index: 3;
+}
+.card:hover .bottom_btns {
+    transform: translateY(0);
+}
+
+.card__open {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    background-color: #EFEFEF;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 50%;
+    padding: .2em;
+    border-radius: 60px;
+    z-index: 3;
+}
+.card__open a {
+    text-decoration: none;
+    padding: .6em;
+    color: black;
+}
+.card__open a:visited {
+    color: black;
+}
+.open:hover {
+    background-color: red;
+}
+
+.card__upload {
+    position: absolute;
+    z-index: 3;
+    bottom: 5%;
+    right: 15%;
+    padding: .3em;
+    background-color: #EFEFEF;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.card__options {
+    position: absolute;
+    z-index: 3;
+    bottom: 5%;
+    right: 5%;
+    user-select: none;
+    background-color: #EFEFEF;
+    border-radius: 100%;
+    padding: .1em;
+    text-align: center;
+    cursor: pointer;
+}

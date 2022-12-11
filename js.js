@@ -9,7 +9,7 @@ const close_menu = document.querySelector('.close_line');
 const menu = document.querySelector('.nav_link_container');
 const site = document.querySelector('.site_container');
 const profile_pic = document.querySelector('.profile_picture_container').getBoundingClientRect();
-const cta = document.querySelector(".cta");
+const cta = document.querySelector(".cta_mouse");
 
 let current_position = window.pageYOffset;
 window.onscroll = function () {

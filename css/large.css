@@ -1,11 +1,5 @@
 :root {
     /* Colors */
-    --primary_clr: #0A192F;
-    --title_clr: #CCD6F6;
-    --text_clr: #828DAA;
-    --link_clr: #FF7124;
-    --link_clr_light: #122E3F;
-    --navy_shadow: #020c1bb3;
 
     /* Fonts */
     --fs_title_lg: 2.3em;
@@ -74,10 +68,6 @@
         width: 500px;
     }
 
-    .contact_me {
-        align-self: flex-start;
-    }
-
     .button {
         display: block;
         margin: 0;
@@ -92,32 +82,10 @@
 
     /* Skills */
 
-    .ul_container {
-        justify-content: flex-start;
-    }
 
 /*     .built_container {
 
     } */
 
-    .project {
-        height: 500px;
-        max-width: 556px;
-        margin: 0 auto;
-        flex-grow: 1;
-    }
 
-    .project_1 {
-        margin-bottom: 3em;
-        
-    }
-    .project_2 {
-        margin-bottom: 3em;
-    }
-
-    .project_description {
-        max-width: 60%;
-        margin: 0 auto;
-        
-    }
 }
