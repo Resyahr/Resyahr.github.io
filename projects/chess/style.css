@@ -1,0 +1,81 @@
+.container {
+    text-align: center;
+    position: relative;
+    
+}
+
+.chess {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+    /* font-size: 0; */
+    
+}
+
+.row {
+    font-size: 1em;
+    position: relative;
+}
+
+
+
+.row div span {
+    position: absolute;
+    font-size: 1em;
+}
+
+
+
+.row div span {
+    position: absolute;
+    color: rgb(255, 0, 221);
+}
+
+.row div {
+    width: 50px;
+    height: 50px;
+}
+
+div{
+    display: inline-block;
+    font-size: 1em;
+}
+
+/* Rows / squares */
+.row:nth-child(odd) div:nth-child(odd) {
+    background-color: #B09069;
+}
+
+.row:nth-child(odd) div:nth-child(even) {
+    background-color: #000000;
+}
+
+.row:nth-child(even) div:nth-child(odd) {
+    background-color: #000000;
+}
+
+.row:nth-child(even) div:nth-child(even) {
+    background-color: #B09069;
+}
+
+/* Letters / Numbers */
+.row:first-of-type span:first-of-type {
+    position: absolute;
+    bottom: 100%;
+}
+.row:last-of-type span:last-of-type {
+    position: absolute;
+    top: 100%;
+}
+
+
+
+.chess .row:nth-child() span {
+    position: absolute;
+} 
+
+.chess .row div:hover{
+    background-color: red;
+}
